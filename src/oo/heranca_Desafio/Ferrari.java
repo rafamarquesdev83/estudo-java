@@ -1,14 +1,25 @@
 package oo.heranca_Desafio;
 
-public class Ferrari extends Carro {
+public class Ferrari extends Carro implements Esportivo {
 
+	public Ferrari() {
+		this(315);
+	}
+	
 	public Ferrari(int velocidadeMaxima) {
-
 		super(velocidadeMaxima);
+		delta = 15;
 	}
 
 	@Override
-	void acelerar() {
-		velocidadeAtual = 15;
+	public void ligarTurbo() {
+	    delta = 35; 	
 	}
+		
+	@Override
+	public void desligarTurbo() {
+		
+		 delta = 15;
+	}
+	
 }

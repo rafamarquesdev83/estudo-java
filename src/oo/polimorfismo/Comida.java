@@ -1,16 +1,11 @@
 package oo.polimorfismo;
 
-public class Pessoa {
-
+public abstract class Comida {
+	
 	private double peso;
 
-	public Pessoa(double peso) {
-		setPeso(peso);
-	}
-
-	public void comer(Comida comida) {
-		this.peso += comida.getPeso();
-
+	public Comida(double peso) {
+         setPeso(peso);
 	}
 
 	public double getPeso() {

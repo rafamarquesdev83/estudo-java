@@ -8,7 +8,7 @@ public class Teste {
 		c1.acelerar();
 
 		Ferrari f1 = new Ferrari(300);
-		f1.acelerar();
+		f1.ligarTurbo();
 
 		System.out.println(c1.velocidadeAtual);
 		System.out.println(f1.velocidadeAtual);
