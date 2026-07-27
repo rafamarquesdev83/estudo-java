@@ -1,7 +1,7 @@
 package lambdas;
 
 import java.util.function.Function;
-import java.util.function.Predicate;
+
 
 public class Desafio {
 
@@ -14,5 +14,8 @@ public class Desafio {
 		
 		Function<Double, Double> impMun =  impoMun -> impoMun >= 2500 ? impoMun * 0.085 : 0.0; 
 		System.out.println(impMun.apply(preco));
-	}
+		
+		Function<Produto, Double> valorFrete = produto -> produto.preco >= 3000.00 ? produto.preco * 1.0 : produto.preco / 2.0;
+		System.out.println("R$ " + String.format ("%.2f",Math.round(valorFrete.apply(p) * 100.0) / 100.0).replace(".", ","));
+	} 
 }
