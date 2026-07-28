@@ -12,7 +12,7 @@ public class Desafio {
 		System.out.println(precoReal.apply(p));
 		Double preco = precoReal.apply(p);
 		
-		Function<Double, Double> impMun =  impoMun -> impoMun >= 2500 ? impoMun * 0.085 : 0.0; 
+		Function<Double, Double> impMun =  impoMun -> impoMun >= 3000 ? impoMun * 1.085 : 0.0; 
 		System.out.println(impMun.apply(preco));
 		
 		Function<Produto, Double> valorFrete = produto -> produto.preco >= 3000.00 ? produto.preco * 1.0 : produto.preco / 2.0;
