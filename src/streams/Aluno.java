@@ -19,4 +19,8 @@ public class Aluno {
 		this.nota = nota;
 		this.bomComportamento = bomComportamento;
 	}
+
+	public String toString() {
+		return nome + " Tem nota: " + nota;
+}
 }
