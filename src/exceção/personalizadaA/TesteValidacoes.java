@@ -12,8 +12,7 @@ public class TesteValidacoes {
             Validar.aluno(null);
         } catch (StringVaziaException e) {
             System.out.println(e.getMessage());
-        } catch (NumeroForaDoIntervaloException | 
-            IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             }
         }
