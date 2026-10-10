@@ -1,11 +1,11 @@
-package streams;
+package exceção;
 
 public class Aluno {
 
 	
-	final String nome;
-	final double nota;
-	final boolean bomComportamento;
+	public String nome;
+	public double nota;
+	public boolean bomComportamento;
 
 	public Aluno(String nome, double nota) {
 		
