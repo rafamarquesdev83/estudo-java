@@ -33,7 +33,7 @@ public class Tabuleiro {
 		
 	}
 	
-	public void alternarMar (int linha, int coluna) {
+	public void alternarMarcacao(int linha, int coluna) {
 		campos.parallelStream()
 		  .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
 		  .findFirst()
